@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="box box1">
+            <img src="https://picsum.photos/1013" id="check1Image" alt="" />
+            <input type="checkbox" class="checkbox" id="check1" onclick="checkboxClick(id)" />
+        </div>
+        <div class="box box1">
+            <img src="https://picsum.photos/1012" id="check2Image" alt="" />
+            <input type="checkbox" class="checkbox" id="check2" onclick="checkboxClick(id)" />
+        </div>
+        <div class="box box1">
+            <img src="https://picsum.photos/1011" id="check3Image" alt="" />
+            <input type="checkbox" class="checkbox" id="check3" onclick="checkboxClick(id)" />
+        </div>
+        <div class="box box1">
+            <img src="https://picsum.photos/1100" id="check4Image" alt="" />
+            <input type="checkbox" class="checkbox" id="check4" onclick="checkboxClick(id)" />
+        </div>
+        <div class="box box1">
+            <img src="https://picsum.photos/1200" id="check5Image" alt="" />
+            <input type="checkbox" class="checkbox" id="check5" onclick="checkboxClick(id)" />
+        </div>
+        <div class="box box1">
+            <img src="https://picsum.photos/1300" id="check6Image" alt="" />
+            <input type="checkbox" class="checkbox" id="check6" onclick="checkboxClick(id)" />
+        </div>
+        <div class="box box1">
+            <img src="https://picsum.photos/1010" id="check7Image" alt="" />
+            <input type="checkbox" class="checkbox" id="check7" onclick="checkboxClick(id)" />
+        </div>
+        <div class="box box1">
+            <img src="https://picsum.photos/1001" id="check8Image" alt="" />
+            <input type="checkbox" class="checkbox" id="check8" onclick="checkboxClick(id)" />
+        </div>
+        <div class="box box1">
+            <img src="https://picsum.photos/1002" id="check9Image" alt="" />
+            <input type="checkbox" class="checkbox" id="check9" onclick="checkboxClick(id)" />
+        </div>
+        <div class="box box1">
+            <img src="https://picsum.photos/1003" id="check10Image" alt="" />
+            <input type="checkbox" class="checkbox" id="check10" onclick="checkboxClick(id)" />
+        </div>
+        <div class="box box1">
+            <img src="https://picsum.photos/1004" id="check11Image" alt="" />
+            <input type="checkbox" class="checkbox" id="check11" onclick="checkboxClick(id)" />
+        </div>
+        <div class="box box1">
+            <img src="https://picsum.photos/1005" id="check12Image" alt="" />
+            <input type="checkbox" class="checkbox" id="check12" onclick="checkboxClick(id)" />
+        </div>
+        <div class="box box1">
+            <img src="https://picsum.photos/1006" id="check13Image" alt="" />
+            <input type="checkbox" class="checkbox" id="check13" onclick="checkboxClick(id)" />
+        </div>
+        <div class="box box1">
+            <img src="https://picsum.photos/1007" id="check14Image" alt="" />
+            <input type="checkbox" class="checkbox" id="check14" onclick="checkboxClick(id)" />
+        </div>
+        <div class="box box1">
+            <img src="https://picsum.photos/1008" id="check15Image" alt="" />
+            <input type="checkbox" class="checkbox" id="check15" onclick="checkboxClick(id)" />
+        </div>
+        <div class="box box1">
+            <img src="https://picsum.photos/1009" id="check16Image" alt="" />
+            <input type="checkbox" class="checkbox" id="check16" onclick="checkboxClick(id)" />
+        </div>
+    </div>
+    <script>
+        function getRandomNumberBetween(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+
+        function checkboxClick(id) {
+            const imageId = `${id}Image`;
+            const number = getRandomNumberBetween(1000, 1100);
+            document.getElementById(
+                imageId
+            ).src = `https://picsum.photos/${number}`;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
