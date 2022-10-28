@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+#homepage video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.topheader {
+  display: flex;
+  flex-direction: row;
+  gap: 32em;
+  font-size: medium;
+  color: rgb(42, 40, 59);
+  background-color: rgba(73, 135, 116, 0.479);
+}
+.topheader p {
+  margin-top: 10px;
+}
+.topheader img {
+  margin-left: 5px;
+}
+.bottomheader {
+  display: block;
+  text-align: center;
+  flex-direction: row;
+  background-color: rgba(73, 135, 116, 0.479);
+}
+.bottomheader a {
+  color: rgb(42, 40, 59);
+  font-size: 17px;
+  text-decoration: none;
+  font-weight: medium;
+  padding: 20px;
+}
+.destination {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(174 208 187);
+}
+.destination p {
+  text-align: center;
+  font-weight: bolder;
+  color: #173559;
+  padding: 6px;
+  font-size: 18px;
+}
+.destination span {
+  text-align: center;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.77);
+  padding: 5px;
+}
+.Agrid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 12px;
+}
+.Atext {
+  align-items: center;
+  text-align: center;
+}
+.Atext p {
+  text-align: center;
+  align-items: center;
+}
+.Atext button {
+  border: none;
+  background-color: rgb(237, 248, 245);
+  font-size: 15px;
+  padding: 8px;
+  border-radius: 12px;
+  width: 7vw;
+}
+.what {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(174 208 187);
+}
+.what span {
+  text-align: center;
+  font-weight: bolder;
+  padding: 10px;
+  font-size: 18px;
+}
+.what p {
+  display: flex;
+  flex-direction: column;
+  font-weight: medium;
+  font-size: 18px;
+  padding: 12px;
+  text-align: center;
+  color: #173559;
+}
+/* <----------------------------------------- Footer Section------------------------------------------> */
+.footer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background: rgba(42, 43, 43, 0.158);
+  height: 15em;
+}
+.logodetail {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  margin-top: 2em;
+  margin-left: 7em;
+  font-size: 15px;
+  width: 15em;
+}
+.logodetail img {
+  width: 5em;
+  height: 5rem;
+}
+.copyright {
+  margin-top: 2em;
+}
+.footerdetail {
+  position: relative;
+  margin-top: 2.5em;
+  font-size: 19px;
+  font-weight: bold;
+}
+.footerdetail ul {
+  margin-top: 1em;
+  font-size: 17px;
+  font-weight: normal;
+}
+.footerdetail ul li a {
+  color: rgba(0, 0, 0, 0.636);
+}
